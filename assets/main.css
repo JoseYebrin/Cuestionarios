@@ -1,0 +1,720 @@
+/*---------------------------RESET------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+* {
+    outline:none;
+}
+*::-moz-focus-inner {
+    border: 0;
+}
+
+/*---------------------------INICIO------------------------*/
+
+*, html, body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: url("background35.png");
+}
+
+.inicio {
+    text-align: center;
+}
+
+.main {
+    min-height: 100%;
+    margin-bottom: -26px;
+}
+
+/* START FOOTER */
+
+.footer {
+    height: 26px;
+    padding: 7px 20px;
+    font-size: 12px;
+    background-color: rgba(0, 76, 76, 0.4);
+    box-shadow: 0 1px 15px whitesmoke;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    font-size: 14px;
+}
+
+.right > a {
+    margin: 0 12px;
+}
+
+.right > a:last-of-type {
+    margin-right: 0;
+}
+
+.left > a {
+    margin: 0 13px;
+}
+
+.left > a:first-of-type {
+    margin-left: 0;
+}
+
+.divider {
+    display: inline-block;
+    border: 1px solid gray;
+    height: 10px;
+}
+
+/*END FOOTER*/
+
+.inicio > h1 {
+    padding-top: 9%;
+    padding-bottom: 60px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.inicio .btn {
+    width: 180px;
+    height: 70px;
+}
+
+.btn {
+    margin: 0 80px;
+    font-size: 14px;
+    background: none;
+    border: 5px solid white;
+    border-radius: 15px 5px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.inicio > .divider {
+    position: relative;
+    top: 46px;
+    height: 100px;
+}
+
+a:hover, .footer i:hover {
+    color: gray;
+}
+
+.submit {
+    float: right;
+    margin: 25px 50px 15px 0;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.submit > .btn {
+    width: 36px;
+    height: 36px;
+    margin: 0 0 0 20px;
+    border: 3px solid whitesmoke;
+}
+
+.red:hover {
+    background-color: rgb(125, 0, 0);
+    border-color: rgb(125, 0, 0);
+}
+
+.blue:hover {
+    background-color: rgb(0, 76, 76);
+    border-color: rgb(0, 76, 76);
+}
+
+.green:hover {
+    background-color: rgb(0, 102, 0);
+    border-color: rgb(0, 102, 0);
+}
+
+.container {
+    padding: 40px 100px;
+}
+
+/*START NAVIGATOR*/
+
+.nav {
+    background-color: rgba(0, 76, 76, 0.4);
+    padding: 0 100px;
+    height: 65px;
+    box-shadow: 0 1px 15px whitesmoke;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    background-color: rgb(172, 172, 172);
+    color: black;
+}
+
+.nav a.active {
+    background-color: rgb(0, 76, 76);
+}
+
+.nav .search-container {
+    float: right;
+}
+
+.nav input[type=text] {
+    width: 200px;
+    height: 35px;
+    padding: 6px;
+    margin-top: 14px;
+    font-size: 14px;
+    border: none;
+    color: black;
+    transition: width 0.3s;
+}
+
+.nav input[type=text]:focus {
+    width: 500px;
+}
+
+.nav .search-container button {
+    float: right;
+    height: 35px;
+    padding: 6px 10px;
+    margin-top: 14px;
+    background-color: rgb(172, 172, 172);
+    border-radius: 0 5px 15px 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .search-container button:hover {
+    background: rgb(133, 133, 133);
+}
+
+/*END NAVIGATOR*/
+
+h2 {
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+hr {
+    margin: 40px auto 60px auto;
+    width: 100px;
+    border: 1px solid gray;
+}
+
+.container > input {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.type {
+    display: block;
+    width: 60%;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    transition: width 0.3s;
+}
+
+.type:focus {
+    color: rgb(172, 172, 172);
+    width: 90%;
+}
+
+.question p {
+    margin-top: 20px;
+}
+
+.question * {
+    margin-bottom: 10px;
+}
+
+.add {
+    border: none;
+    background: none;
+    height: 25px;
+    padding-top: 4px;
+    background-color: rgb(0, 102, 0);
+    border-radius: 2px;
+}
+
+.add:last-of-type {
+    background-color: rgb(125, 0, 0);
+    margin-left: 20px;
+}
+
+.add:hover {
+    cursor: pointer;
+}
+
+.answer {
+    margin: 50px 13px 20px 13px;
+}
+
+.answer >  label {
+    float: right;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    transition: 0.3s;
+}
+
+td {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.cuestionarios tr:nth-child(odd) {
+    background-color: rgba(172, 172, 172, 0.1);
+}
+
+.cuestionarios {
+    margin-top: -40px;
+    margin-bottom: 76px;
+}
+
+.cuestionarios tr {
+    height: 130px;
+}
+
+.cuestionarios tr:hover {
+    background-color: rgba(133, 133, 133, 0.5);
+}
+
+.cuestionarios td {
+    padding: 0 100px 0 100px;
+}
+
+.cuestionarios td p:first-child {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cuestionarios td p:last-child {
+    font-size: 12px;
+    color: rgb(172, 172, 172);
+    padding: 10px 0 0 30px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(172, 172, 172);
+}
+
+.respuestas {
+    background-color: rgba(172, 172, 172, 0.1);
+}
+
+.respuestas tr {
+    height: 60px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.respuestas tr:hover {
+    background-color: rgba(133, 133, 133, 0.5);
+}
+
+.respuestas td {
+    padding: 0 40px;
+}
+
+.selected {
+    background-color: rgb(0, 76, 76);
+}
+
+/*START GRAPH/SURVEY BUTTON*/
+
+.chart-btn {
+    position: absolute;
+    right: 160px;
+    height: 55px;
+    width: 60px;
+    margin-top: 5px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s;
+}
+
+.chart-btn:hover {
+    background-color: rgba(133, 133, 133, 0.5);
+    cursor: pointer;
+}
+
+.chart {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+/*END GRAPH/SURVEY BUTTON*/
+
+/* CUSTOM CHECKBOX */
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: rgb(103, 103, 103);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* CUSTOM CHECKBOX END */
+
+/* TICK ANIMATION */
+
+.tick__container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.tick {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 15% auto;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.tick__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke .6s cubic-bezier(0.650, 0.000, 0.450, 1.000) forwards;
+}
+
+.tick__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) .8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
+}
+
+/* TICK ANIMATION END */
+
+/* MODAL CSS */
+
+.modal-container {
+  padding: 40px;
+  position: relative;
+}
+
+.modal-container > input[type=text], .modal-container > input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-container > button {
+  background-color: rgb(0, 102, 102);
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  margin: 40px auto;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+}
+  
+.modal-container > button:hover {
+  opacity: 0.8;
+}
+
+.modal-container > p {
+    display: block;
+    text-align: center;
+}
+
+.modal-container > p:last-child:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal *{
+    color: #222;
+}
+  
+.modal-content {
+  background-color: #eee;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 35%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+  
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* END MODAL CSS */
+
+/*START PERSONAL SITE*/
+
+.personal-info {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.personal-info span {
+  font-size: 26px;
+  font-weight: 700;
+  margin-right: 10px;
+  color: rgb(172, 172, 172);
+}
+
+.delete-survey {
+  color: whitesmoke;
+  top: 25px;
+}
+
+/*END PERSONAL SITE*/
+
+/*START GRAPH STYLES*/
+
+.graph-container {
+  display: flex;
+  height: 70vh;
+  margin-bottom: 40px;
+  background-color: rgba(133, 133, 133, 0.2);
+  border-radius: 20px;
+}
+
+.graph-controls {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  border-radius: 20px;
+}
+
+.graph-controls:hover {
+  cursor: pointer;
+}
+
+.graph-controls > i{
+  color: gray;
+  font-size:6vw;
+}
+
+.graph-controls:hover i{
+  color: whitesmoke;
+}
+
+.graph {
+  width: 80%;
+  padding: 10px;
+  margin-top: -35px;
+}
+
+/*END GRAPH STYLES*/
