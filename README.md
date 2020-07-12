@@ -1,7 +1,7 @@
 # Cuestionarios
 Sitio web para la creación de Cuestionarios.
 
-Funcionamiento basado en JavaScript y PHP, por medio de AJAX.  
+Funcionamiento basado en JavaScript y PHP, con comunicaciones por AJAX.  
 
 Se hizo uso de la librería JQuery, para lograr una interfaz más interactiva y visual,  
 y la librería ChartJS para mostrar los resultados de cada cuestionario.  
